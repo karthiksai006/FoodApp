@@ -1,0 +1,32 @@
+.order-item {
+    display: flex;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid var(--theme-color);
+    padding: 20px;
+    margin-block: 10px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.order-item-food, .order-item-name {
+    font-weight: 600;
+}
+
+.order-item img {
+    width: 50px;
+}
+
+.order-item-address {
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.order-item select {
+    background-color: #ffe8e4;
+    border: 1px solid var(--theme-color);
+    outline: none;
+    padding: 10px;
+    outline: none;
+}
