@@ -10,9 +10,8 @@ const Footer = () => {
         <div className="footer-left">
           <img className='logo-bottom' src={assets.logo_bottom} alt="Logo" />
           <p>
-            Food Prep is a full-stack project designed for hands-on teaching.
-            It helps students learn full-stack development, powered by Faceprep —
-            an ed-tech company focused on building career-ready skills.
+           FoodPrep brings you delicious meals from a curated menu, crafted to satisfy every craving.
+Order with ease, track in real-time, and enjoy a seamless dining experience from start to finish.
           </p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="Facebook" />
@@ -40,7 +39,7 @@ const Footer = () => {
         <div className="footer-section">
           <h2>Get in Touch</h2>
           <li>+91 88855 85152</li>
-          <li>enquiry@swiggy.in</li>
+          <li>enquiry@foodprep.in</li>
         </div>
 
       </div>

@@ -1,7 +1,7 @@
 .header {
     height: 34vw;
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat center center;
+    background: url('/header_pic.avif') no-repeat center center;
     background-size: cover;
     position: relative;
     border-radius: 16px;
@@ -34,7 +34,7 @@
 
 .header-contents h2 {
     font-weight: 600;
-    font-size: max(4.5vw, 2.2rem);
+      font-size: max(3.5vw, 1.8rem);
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
