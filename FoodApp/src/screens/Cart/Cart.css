@@ -1,4 +1,4 @@
-.cart {
+cart {
   margin-top: 100px;
 }
 
@@ -23,7 +23,7 @@
 
 .cart-items-item {
   margin: 10px 0;
-  color: black;
+  color: white;
 }
 
 .cart-items-item img {
@@ -33,7 +33,7 @@
 
 .cart hr {
   height: 1px;
-  background-color: #e2e2e2;
+  background-color: gray;
   border: none;
 }
 

@@ -1,21 +1,36 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 4%;
+    padding: 12px 5%;
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.navbar .logo{
-    width: max(10%,200px);
-}
-.navbar .profile{
-    width: max(10%,200px);
-}
-.navbar .profile{
-    width:40px;
+.navbar .logo {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0.95);
 }
 
-.flex-col{
+.navbar .profile {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--theme-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar .profile:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+}
+
+.flex-col {
     display: flex;
     flex-direction: column;
 }

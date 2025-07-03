@@ -1,42 +1,56 @@
-import React from 'react'
-import { assets } from '../../assets/assets'
-import "./Footer.css"
+import React from 'react';
+import { assets } from '../../assets/assets';
+import './Footer.css';
+
 const Footer = () => {
   return (
     <div className='footer' id='footer'>
-        <div className="footer-content">
-            <div className="footer-left">
-                <img className='logo-bottom' src={assets.logo_bottom} alt="" />
-                <p>Food prep is a full-stack project designed for hands-on teaching,
-                    helping students learn full-stack development. it's used by faceprep.
-                    an ed-tech company focused on equipping students with the skills to 
-                    achieve their carrer aspirations.
-                    <div className="footer-sociaal-icons">
-                        <img src={assets.facebook_icon} alt="" />
-                        <img src={assets.twitter_icon} alt="" />
-                        <img src={assets.linkedin_icon} alt="" />
-                    </div>
-                </p>
-            </div>
-            <div className="footer-center">
-                <h2>Company</h2>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Courses</li>
-                <li>Reviews</li>
-            </div>
-            <div className="footer-right">
-                <h2>Get in touch</h2>
-                <ul>
-                    <li>+91 88855 85152</li>
-                    <li>enquiry@swiggy.in</li>
-                </ul>
-            </div>
-            <hr />
-            <p className='footer-copyright'>Copyrights 2024 © FoodPrep.All rights reserved</p>
+      <div className="footer-content">
+        
+        <div className="footer-left">
+          <img className='logo-bottom' src={assets.logo_bottom} alt="Logo" />
+          <p>
+            Food Prep is a full-stack project designed for hands-on teaching.
+            It helps students learn full-stack development, powered by Faceprep —
+            an ed-tech company focused on building career-ready skills.
+          </p>
+          <div className="footer-social-icons">
+            <img src={assets.facebook_icon} alt="Facebook" />
+            <img src={assets.twitter_icon} alt="Twitter" />
+            <img src={assets.linkedin_icon} alt="LinkedIn" />
+          </div>
         </div>
-    </div>
-  )
-}
 
-export default Footer
+        <div className="footer-section">
+          <h2>Company</h2>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Courses</li>
+          <li>Reviews</li>
+        </div>
+
+        <div className="footer-section">
+          <h2>Explore</h2>
+          <li>Menu</li>
+          <li>My Orders</li>
+          <li>Login</li>
+          <li>Cart</li>
+        </div>
+
+        <div className="footer-section">
+          <h2>Get in Touch</h2>
+          <li>+91 88855 85152</li>
+          <li>enquiry@swiggy.in</li>
+        </div>
+
+      </div>
+
+      <hr />
+      <p className='footer-copyright'>
+        © 2024 FoodPrep. All rights reserved.
+      </p>
+    </div>
+  );
+};
+
+export default Footer;

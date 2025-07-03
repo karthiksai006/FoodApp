@@ -43,6 +43,11 @@ const Verify = () => {
     return () => clearTimeout(timer)
   }, [success, orderId, url, token, navigate])
 
+  useEffect(()=>{
+        verifyPayment()
+        navigate('/myorders')
+    },[])
+
   return <Loader />
 }
 

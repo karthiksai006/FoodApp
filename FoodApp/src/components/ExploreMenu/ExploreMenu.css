@@ -1,64 +1,93 @@
-.explore-menu{
+.explore-menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-.explore-menu h1{
-    color:#262626;
-    font-size: 2.2rem;
-    font-weight: 500;
-
+    padding-inline: 20px;
 }
 
-.explore-menu-text{
+.explore-menu h1 {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.explore-menu-text {
     max-width: 60%;
-    color:#808080 ;
+    color: #c0c0c0;
+    font-size: 1rem;
+    line-height: 1.6;
 }
-.explore-menu-list{
+
+.explore-menu-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap:30px;
+    gap: 30px;
     text-align: center;
     margin-block: 20px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
 }
 
-.explore-menu-list::-webkit-scrollbar{
+.explore-menu-list::-webkit-scrollbar {
     display: none;
 }
 
-.explore-menu-list-item img{
-    width:7.5vw;
+/* Menu icons */
+.explore-menu-list-item img {
+    width: 7.5vw;
     min-width: 80px;
     cursor: pointer;
     border-radius: 50%;
-    transition: 0.2s;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.explore-menu-list-item p{
-    margin-top: 10px;
-    color:#747474;
-    font-size: max(1.4vw,1.6rem);
-    cursor: pointer;
+.explore-menu-list-item img:hover {
+    transform: scale(1.05);
+    border-color: #ff2e2e;
 }
-.explore-menu hr{
-    margin: 10px 0;
-    height:2px;
-    border:none;
-    background-color: #e2e2e2;
-}
-.explore-menu-list-item .active{
-    border: 4px solid var(--theme-color);
+
+.explore-menu-list-item .active {
+    border: 4px solid #ff2e2e;
     padding: 2px;
+    transform: scale(1.1);
 }
 
- @media (max-width:1050px){
-    .header-contents{
-        max-width: 100%;
-        font-size:1.4rem;
-    }
-    .explore-menu h1{
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: #eeeeee;
+    font-size: max(1.3vw, 1.4rem);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.explore-menu-list-item p:hover {
+    color: #ff2e2e;
+}
+
+.explore-menu hr {
+    margin: 10px 0;
+    height: 2px;
+    border: none;
+    background-color: #333;
+}
+
+
+@media (max-width: 1050px) {
+    .explore-menu h1 {
         font-size: 2rem;
     }
- }
+
+    .explore-menu-text {
+        max-width: 90%;
+        font-size: 0.95rem;
+    }
+
+    .explore-menu-list-item p {
+        font-size: 1.2rem;
+    }
+}

@@ -1,30 +1,50 @@
-:root{
-    --theme-color:#21063e;
+:root {
+  --theme-color: #ff2e2e;         
+  --bg-dark: #121212;            
+  --bg-light: #1e1e1e;           
+  --text-primary: #ffffff;       
+  --text-secondary: #b0b0b0;     
+  --border-color: #333;          
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-body{
-    min-width: 100vh;
-    font-size: 1.6rem;
-}
-a{
-    text-decoration: none;
-    color:inherit;
-}
-.app{
-    width:80%;
-    margin:0 auto;
-}
-html{
-    font-size:62.5%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@keyframes fadeIn{
-    0% {opacity:0;}
-    100% {opacity: 100;}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
